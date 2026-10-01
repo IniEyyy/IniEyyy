@@ -42,10 +42,6 @@ API documentation for a Lua scripting tool, put together by testing each functio
 **[ML Energy Experiment](https://github.com/IniEyyy/ML-Energy-Experiment)**
 An academic research experiment.
 
-**[Portofolio](https://github.com/IniEyyy/portofolio)**
-My portfolio site. Static, one page.
-<sub>`Astro` · `Tailwind CSS`</sub>
-
 <img src="assets/divider.svg" width="100%" alt="">
 
 ## Right now
