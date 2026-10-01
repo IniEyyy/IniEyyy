@@ -1,60 +1,89 @@
-<h1 align="center">Hi, I'm IniEy 👋</h1>
-
 <p align="center">
-  I build production-style software — from offline-first desktop apps to microservices architecture
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img src="assets/banner-light.svg" alt="IniEy" width="100%">
+  </picture>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=IniEyyy&label=Profile%20views&color=1F6FEB&style=flat" />
-</p>
+I'm a computer science student who likes owning a project end to end: the interface, the data layer, and the part that has to keep working when the network doesn't. Most of my work is TypeScript and Node, with C, Python, Java and Lua for everything else.
 
----
+<img src="assets/divider.svg" width="100%" alt="">
 
-## 🚀 About Me
+## Things I've built
 
-- 🎓 Computer Science student
-- 🧑‍💻 Interested in full-stack development, desktop apps, and system architecture
-- 🌏 Comfortable working in both **Indonesian** and **English**
+**[Canvas App](https://github.com/IniEyyy/canvas-app)**
+A local-first infinite canvas for the desktop. Boards autosave to a file on your machine, so there's no account and no connection needed. MIT licensed.
+<sub>`Tauri v2` · `React 19` · `Excalidraw`</sub>
 
-## 🛠️ Tech Stack
+<details>
+<summary>How it saves your work</summary>
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0F2A5C','primaryTextColor':'#E6EDF8','primaryBorderColor':'#58A6FF','lineColor':'#58A6FF','fontFamily':'ui-monospace, monospace'}}}%%
+flowchart LR
+  A["Excalidraw canvas<br/>React 19"] -->|"debounced 800 ms"| B["Tauri v2"]
+  B --> C[("board.json<br/>app-data")]
+```
+
+</details>
+
+**[Seatudy](https://github.com/IniEyyy/seatudy)**
+An online learning platform with role-based access, JWT auth and real-time features.
+<sub>`React` · `Vite` · `Node.js` · `Express` · `PostgreSQL` · `Socket.IO`</sub>
+
+**[Jomoro Koffee](https://github.com/IniEyyy/SA)**
+A system architecture project built as NestJS microservices.
+<sub>`NestJS` · `Microservices`</sub>
+
+**[Growlauncher Documentation](https://github.com/IniEyyy/Growlauncher-Documentation)** &nbsp; ![stars](https://img.shields.io/github/stars/IniEyyy/Growlauncher-Documentation?style=flat-square&color=1F6FEB&labelColor=0A1020)
+API documentation for a Lua scripting tool, put together by testing each function by hand.
+<sub>`Lua`</sub>
+
+**[ML Energy Experiment](https://github.com/IniEyyy/ML-Energy-Experiment)**
+An academic research experiment.
+
+**[Portofolio](https://github.com/IniEyyy/portofolio)**
+My portfolio site. Static, one page.
+<sub>`Astro` · `Tailwind CSS`</sub>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## Right now
+
+- Extending Canvas App: PDF export, multi-board management, media overlays
+- Finishing my portfolio site
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+## Stack
 
 <p>
-  <img src="https://skillicons.dev/icons?i=c,py,java,js,ts,lua,sql&theme=dark" /><br/>
-  <img src="https://skillicons.dev/icons?i=react,nodejs,express,postgres,flutter,tailwind,astro&theme=dark" /><br/>
-  <img src="https://skillicons.dev/icons?i=tauri,git,github,vscode&theme=dark" />
+  <img src="https://img.shields.io/badge/C-0A1020?style=flat-square&logo=c&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Python-0A1020?style=flat-square&logo=python&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/JavaScript-0A1020?style=flat-square&logo=javascript&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/TypeScript-0A1020?style=flat-square&logo=typescript&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Java-0A1020?style=flat-square&logo=openjdk&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Lua-0A1020?style=flat-square&logo=lua&logoColor=58A6FF">
 </p>
-
-## 📌 Featured Projects
-
-| Project | What it is | Stack |
-|---|---|---|
-| [**canvas-app**](https://github.com/IniEyyy/canvas-app) | Local-first infinite canvas whiteboard for desktop. Offline-first, MIT-licensed. | Tauri v2 · React 19 · Excalidraw |
-| [**seatudy**](https://github.com/IniEyyy/seatudy) | Online learning platform with role-based access and real-time features. | React + Vite · Node.js/Express · PostgreSQL · JWT · Socket.IO |
-| [**SA**](https://github.com/IniEyyy/SA) | Jomoro Koffee — system architecture project using microservices. | NestJS |
-| [**ML-Energy-Experiment**](https://github.com/IniEyyy/ML-Energy-Experiment) | Academic research experiment. | Python |
-| [**Growlauncher-Documentation**](https://github.com/IniEyyy/Growlauncher-Documentation) | Community-used API documentation, built by exploring the Lua executor hands-on. | Lua |
-| [**portofolio**](https://github.com/IniEyyy/portofolio) | My personal portfolio site. | Astro · Tailwind |
-
 <p>
-  <a href="https://github.com/IniEyyy/Growlauncher-Documentation">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IniEyyy&repo=Growlauncher-Documentation&theme=github_dark&hide_border=true" />
-  </a>
-  <a href="https://github.com/IniEyyy/canvas-app">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=IniEyyy&repo=canvas-app&theme=github_dark&hide_border=true" />
-  </a>
+  <img src="https://img.shields.io/badge/React-0A1020?style=flat-square&logo=react&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Astro-0A1020?style=flat-square&logo=astro&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-0A1020?style=flat-square&logo=tailwindcss&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Flutter-0A1020?style=flat-square&logo=flutter&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Tauri-0A1020?style=flat-square&logo=tauri&logoColor=58A6FF">
 </p>
-
-## 📊 GitHub Stats
-
 <p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=IniEyyy&show_icons=true&theme=github_dark&hide_border=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=IniEyyy&layout=compact&theme=github_dark&hide_border=true" />
+  <img src="https://img.shields.io/badge/Node.js-0A1020?style=flat-square&logo=nodedotjs&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Express-0A1020?style=flat-square&logo=express&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/NestJS-0A1020?style=flat-square&logo=nestjs&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/PostgreSQL-0A1020?style=flat-square&logo=postgresql&logoColor=58A6FF">
+  <img src="https://img.shields.io/badge/Socket.IO-0A1020?style=flat-square&logo=socketdotio&logoColor=58A6FF">
 </p>
 
-## 🤝 Collaboration
+<img src="assets/divider.svg" width="100%" alt="">
 
-Open to collaborations and interesting side projects — feel free to open an issue or discussion on any of the repos above.
+## How I work
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=1F6FEB&height=90&section=footer" />
-</p>
+I use AI coding agents for implementation. The architecture, the trade-offs and the review are still mine.
+
+Issues and discussions are open on every repo above.
