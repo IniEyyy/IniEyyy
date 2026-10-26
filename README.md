@@ -31,6 +31,15 @@ flowchart LR
 An online learning platform with role-based access, JWT auth and real-time features.
 <sub>`React` · `Vite` · `Node.js` · `Express` · `PostgreSQL` · `Socket.IO`</sub>
 
+<p align="center">
+  <a href="https://github.com/IniEyyy/seatudy">
+    <img src="assets/seatudy-preview.gif" alt="Seatudy preview: student dashboard, course assignments, instructor submissions, and the admin course manager" width="100%">
+  </a>
+</p>
+<p align="center">
+  <sub>Dark-mode walkthrough · <a href="https://github.com/IniEyyy/seatudy/blob/main/docs/preview.mp4">full-quality MP4 (22s)</a></sub>
+</p>
+
 **[Jomoro Koffee](https://github.com/IniEyyy/SA)**
 A system architecture project built as NestJS microservices.
 <sub>`NestJS` · `Microservices`</sub>
