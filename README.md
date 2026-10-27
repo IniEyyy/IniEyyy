@@ -12,8 +12,17 @@ I'm a computer science student who likes owning a project end to end: the interf
 ## Things I've built
 
 **[Canvas App](https://github.com/IniEyyy/canvas-app)**
-A local-first infinite canvas for the desktop. Boards autosave to a file on your machine, so there's no account and no connection needed. MIT licensed.
+A local-first whiteboard workspace for the desktop: named boards with tags, automatic version history, cross-board links, Markdown export, 18 templates, and a one-click mind-map layout. Everything autosaves to files on your machine — no account and no connection needed. MIT licensed.
 <sub>`Tauri v2` · `React 19` · `Excalidraw`</sub>
+
+<p align="center">
+  <a href="https://github.com/IniEyyy/canvas-app/blob/main/docs/canvas-trailer.mp4">
+    <img src="assets/canvas-trailer-poster.png" alt="Canvas trailer: template gallery with live previews" width="100%">
+  </a>
+</p>
+<p align="center">
+  <sub>45-second walkthrough · <a href="https://github.com/IniEyyy/canvas-app/blob/main/docs/canvas-trailer.mp4">full-quality MP4</a> · <a href="https://github.com/IniEyyy/canvas-app">view code</a></sub>
+</p>
 
 <details>
 <summary>How it saves your work</summary>
@@ -22,7 +31,8 @@ A local-first infinite canvas for the desktop. Boards autosave to a file on your
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#0F2A5C','primaryTextColor':'#E6EDF8','primaryBorderColor':'#58A6FF','lineColor':'#58A6FF','fontFamily':'ui-monospace, monospace'}}}%%
 flowchart LR
   A["Excalidraw canvas<br/>React 19"] -->|"debounced 800 ms"| B["Tauri v2"]
-  B --> C[("board.json<br/>app-data")]
+  B --> C[("boards/&lt;id&gt;/board.json")]
+  C --> D[("snapshots/*.json<br/>auto every 5 min")]
 ```
 
 </details>
@@ -55,7 +65,7 @@ An academic research experiment.
 
 ## Right now
 
-- Extending Canvas App: PDF export, multi-board management, media overlays
+- Extending Canvas App: PDF export, media overlays, performance
 - Finishing my portfolio site
 
 <img src="assets/divider.svg" width="100%" alt="">
