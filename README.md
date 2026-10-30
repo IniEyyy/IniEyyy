@@ -27,16 +27,9 @@ A local-first whiteboard workspace for the desktop: named boards with tags, auto
 <details>
 <summary>How it saves your work</summary>
 
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0F2A5C','primaryTextColor':'#E6EDF8','primaryBorderColor':'#58A6FF','lineColor':'#58A6FF','fontFamily':'ui-monospace, monospace'}}}%%
-flowchart TD
-  A["Excalidraw onChange<br/>React 19"] -->|"debounced 800 ms"| B["saveBoard()<br/>Tauri fs plugin"]
-  B --> C[("boards.json<br/>library index")]
-  B --> D["boards/&lt;id&gt;/"]
-  D --> E[("board.json<br/>scene + app state")]
-  D --> F["assets/<br/>images on disk"]
-  B -.->|"auto, max 1 per 5 min"| G["boards/&lt;id&gt;/snapshots/*.json<br/>version history"]
-```
+<p align="center">
+  <img src="assets/canvas-save-flow.png" alt="Canvas save flow: Excalidraw onChange is debounced 800 ms, then saveBoard writes boards.json plus one folder per board containing board.json, assets, and snapshots." width="420">
+</p>
 
 One queued save path behind the debounce, so a slow disk cannot race the
 next write. On desktop everything stays in the app-data folder: `boards.json`
