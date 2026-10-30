@@ -29,12 +29,13 @@ A local-first whiteboard workspace for the desktop: named boards with tags, auto
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#0F2A5C','primaryTextColor':'#E6EDF8','primaryBorderColor':'#58A6FF','lineColor':'#58A6FF','fontFamily':'ui-monospace, monospace'}}}%%
-flowchart LR
+flowchart TD
   A["Excalidraw onChange<br/>React 19"] -->|"debounced 800 ms"| B["saveBoard()<br/>Tauri fs plugin"]
   B --> C[("boards.json<br/>library index")]
-  B --> D[("boards/&lt;id&gt;/board.json<br/>scene + app state")]
-  B --> E["boards/&lt;id&gt;/assets/<br/>images on disk"]
-  B -.->|"auto, max 1 per 5 min"| F["boards/&lt;id&gt;/snapshots/*.json<br/>version history"]
+  B --> D["boards/&lt;id&gt;/"]
+  D --> E[("board.json<br/>scene + app state")]
+  D --> F["assets/<br/>images on disk"]
+  B -.->|"auto, max 1 per 5 min"| G["boards/&lt;id&gt;/snapshots/*.json<br/>version history"]
 ```
 
 One queued save path behind the debounce, so a slow disk cannot race the
