@@ -28,7 +28,7 @@ A local-first whiteboard workspace for the desktop: named boards with tags, auto
 <summary>How it saves your work</summary>
 
 <p align="center">
-  <img src="assets/canvas-save-flow.png" alt="Canvas save flow: Excalidraw onChange is debounced 800 ms, then saveBoard writes boards.json plus one folder per board containing board.json, assets, and snapshots." width="340">
+  <img src="assets/canvas-save-flow-v2.png" alt="Canvas save flow: Excalidraw onChange is debounced 800 ms, then saveBoard writes boards.json plus one folder per board containing board.json, assets, and snapshots." width="340">
 </p>
 
 One queued save path behind the debounce, so a slow disk cannot race the
