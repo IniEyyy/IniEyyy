@@ -12,7 +12,7 @@ I'm a computer science student who likes owning a project end to end: the interf
 ## Things I've built
 
 **[Canvas App](https://github.com/IniEyyy/canvas-app)**
-A local-first whiteboard workspace for the desktop: named boards with tags, automatic version history, cross-board links, Markdown export, 18 templates, and a one-click mind-map layout. Everything autosaves to files on your machine — no account and no connection needed. MIT licensed.
+A local-first whiteboard workspace for the desktop: named boards with tags, automatic version history, cross-board links, Markdown export, 18 templates, and a one-click mind-map layout. Everything autosaves to files on your machine. No account or connection needed. MIT licensed.
 <sub>`Tauri v2` · `React 19` · `Excalidraw`</sub>
 
 <p align="center">
